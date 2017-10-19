@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Classes">
+      <UniqueIdentifier>{fc5cb953-2953-4968-83b3-39e3ff951754}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="win32">
+      <UniqueIdentifier>{037a9a02-b906-4cc5-ad98-304acd4e25ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource">
+      <UniqueIdentifier>{2d1d0979-58cd-4ab6-b91c-13650158f1fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\cjson">
+      <UniqueIdentifier>{eda8cc7a-b65b-45b0-a5b3-64fd33e46afc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\ai-engine">
+      <UniqueIdentifier>{86d007ac-d258-409e-a1ba-1dd726d02af0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\ai-engine\common">
+      <UniqueIdentifier>{78751d4a-0b73-450c-a805-2cffe33f8c1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\ai-engine\common\2D">
+      <UniqueIdentifier>{353635aa-8039-416e-9667-4bcdd7472642}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\ai-engine\common\game">
+      <UniqueIdentifier>{561c5b7c-1574-43ec-9618-554ef44a44e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\ai-engine\game_vehicle">
+      <UniqueIdentifier>{5d1fac52-46e0-40b7-8f27-4df253b8b066}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\ai-engine\common\message">
+      <UniqueIdentifier>{e752f3f7-1465-41ee-8dff-ae0217f1c226}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\ai-engine\game_soccer">
+      <UniqueIdentifier>{a1645a92-a580-4ecb-9b73-2ea1b00edaba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\ai-engine\game_raven">
+      <UniqueIdentifier>{ef0f3926-476d-4d2a-b3dd-e9668bf938b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\ai-engine\game_raven\misc">
+      <UniqueIdentifier>{6d08a2af-bfa7-4307-9066-db47ea51d8fd}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Classes\AppDelegate.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="SimulatorWin.h" />
+    <ClInclude Include="stdafx.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\cjson\fpconv.h">
+      <Filter>Classes\cjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\cjson\lua_cjson.h">
+      <Filter>Classes\cjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\cjson\strbuf.h">
+      <Filter>Classes\cjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ai-engine\common\game\BaseEntity.h">
+      <Filter>Classes\ai-engine\common\game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ai-engine\common\game\MathBase.h">
+      <Filter>Classes\ai-engine\common\game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ai-engine\common\game\MovingEntity.h">
+      <Filter>Classes\ai-engine\common\game</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Classes\AppDelegate.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="SimulatorWin.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\cjson\fpconv.c">
+      <Filter>Classes\cjson</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\cjson\lua_cjson.c">
+      <Filter>Classes\cjson</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\cjson\strbuf.c">
+      <Filter>Classes\cjson</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ai-engine\common\2D\Vector2D.cpp">
+      <Filter>Classes\ai-engine\common\2D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ai-engine\common\game\BaseEntity.cpp">
+      <Filter>Classes\ai-engine\common\game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ai-engine\game_vehicle\SteeringBehaviors.cpp">
+      <Filter>Classes\ai-engine\game_vehicle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ai-engine\game_vehicle\Vehicle.cpp">
+      <Filter>Classes\ai-engine\game_vehicle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ai-engine\common\game\Path.cpp">
+      <Filter>Classes\ai-engine\common\game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ai-engine\GameEntry.cpp">
+      <Filter>Classes\ai-engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ai-engine\toLuaList_auto.cpp">
+      <Filter>Classes\ai-engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ai-engine\game_vehicle\GameWorldVehicle.cpp">
+      <Filter>Classes\ai-engine\game_vehicle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ai-engine\common\message\MessageDispatcher.cpp">
+      <Filter>Classes\ai-engine\common\message</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ai-engine\game_soccer\FieldPlayer.cpp">
+      <Filter>Classes\ai-engine\game_soccer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ai-engine\game_soccer\FieldPlayerStates.cpp">
+      <Filter>Classes\ai-engine\game_soccer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ai-engine\game_soccer\Goalkeeper.cpp">
+      <Filter>Classes\ai-engine\game_soccer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ai-engine\game_soccer\GoalKeeperStates.cpp">
+      <Filter>Classes\ai-engine\game_soccer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ai-engine\game_soccer\PlayerBase.cpp">
+      <Filter>Classes\ai-engine\game_soccer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ai-engine\game_soccer\SoccerBall.cpp">
+      <Filter>Classes\ai-engine\game_soccer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ai-engine\game_soccer\SoccerPitch.cpp">
+      <Filter>Classes\ai-engine\game_soccer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ai-engine\game_soccer\SoccerTeam.cpp">
+      <Filter>Classes\ai-engine\game_soccer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ai-engine\game_soccer\SteeringBehaviors_Soccer.cpp">
+      <Filter>Classes\ai-engine\game_soccer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ai-engine\game_soccer\SupportSpotCalculator.cpp">
+      <Filter>Classes\ai-engine\game_soccer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ai-engine\game_soccer\TeamStates.cpp">
+      <Filter>Classes\ai-engine\game_soccer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ai-engine\game_raven\GameWorldRaven.cpp">
+      <Filter>Classes\ai-engine\game_raven</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ai-engine\game_raven\misc\Raven_Bot.cpp">
+      <Filter>Classes\ai-engine\game_raven\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ai-engine\game_raven\misc\Raven_Map.cpp">
+      <Filter>Classes\ai-engine\game_raven\misc</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="game.rc">
+      <Filter>resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\game.ico" />
+  </ItemGroup>
+</Project>

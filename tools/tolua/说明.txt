@@ -1,0 +1,10 @@
+
+使用工具自动绑定C++接口(统一输出到一个文件里)
+
+步骤：
+1)在 toLuaList.ini 填写需要导入的文件信息, 一般填写 headers, classes, skip,abstract_classes 这些字段即可。
+具体参考 cocos2dx.ini
+
+2)执行 genbindings.py
+
+成功后在当前目录下生成toLuaList_auto.hpp /toLuaList_auto.cpp , 将这两个文件放入到工程, 调用 register_all_toLuaList()注册。

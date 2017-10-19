@@ -1,0 +1,25 @@
+
+基于引擎3.13
+
+
+1.lua防止重复注册回调 LuaScriptHandlerMgr.cpp line258
+
+2.加入cjson库 : appdelegate.cpp , frameworks\runtime-src\Classes\cjson 
+	WIN32编译的时候会报各种错误,打开工程属性, C/C++ 页, 选项"编译为 --> "编译为C++代码(/TP)"
+		
+3.csload 加载csb自动将node转换为 widget 对象，以支持 clone()方法: 
+	1)NodeReader.cpp 
+		#include "ui/UIWidget.h" //hlb
+		Node* NodeReader::createNodeWithFlatBuffers(const flatbuffers::Table *nodeOptions)
+		{
+			//Node* node = Node::create();
+			//hlb
+			ui::Widget* node = ui::Widget::create();
+	2)SingleNodeReader.cpp 
+		#include "ui/UIWidget.h" //hlb
+		Node* SingleNodeReader::createNodeWithFlatBuffers(const flatbuffers::Table *singleNodeOptions)
+		{
+			//Node* node = Node::create();
+			ui::Widget* node = ui::Widget::create();
+
+			
